@@ -26,6 +26,7 @@ public class CropResponse {
         public String treatmentSuggestions;
         public String irrigationMethods;
         public String storageConditions;
+        public String shortDescription;
     }
 
 }

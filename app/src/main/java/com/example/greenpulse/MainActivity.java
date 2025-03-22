@@ -30,15 +30,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        GradientDrawable gradientDrawable = (GradientDrawable) getResources().
-                getDrawable(R.drawable.grad_3);
-        int startColor = gradientDrawable.getColors()[0];
-        int endColor = gradientDrawable.getColors()[1];
-        Window window = getWindow();
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(endColor);
-        int bottomColor = Color.parseColor("#153E50");
-        window.setNavigationBarColor(bottomColor);
+
+        //setting up the status bar and navigation bar colors
+        setUpBar();
+
 
 
         //logic related to the tabLayout
@@ -77,5 +72,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void setUpBar() {
+        GradientDrawable gradientDrawable = (GradientDrawable) getResources().
+                getDrawable(R.drawable.grad_3);
+        int startColor = gradientDrawable.getColors()[0];
+        int endColor = gradientDrawable.getColors()[1];
+        Window window = getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.setStatusBarColor(endColor);
+        int bottomColor = Color.parseColor("#153E50");
+        window.setNavigationBarColor(bottomColor);
     }
 }

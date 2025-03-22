@@ -42,7 +42,7 @@ along with removing infected plants to minimize spread.
         * Using fungicides as a last resort\n
     </string>
 
-    <string name="weatherKey">e6f8919ca059484eb64df59a75658e79</string>
+    <string name="weatherKey">c4179b477fa847caa06a8b944f07707f</string>
     <string name="location_Key">AIzaSyAHSSVoT_SOJTv9O2Gl08t-KeUiw4o4nV4</string>
     <string name="gemini_key">AIzaSyDk0_Ar996a49JX_ZbEUjUpN089gj3sSuM</string>
 </resources>

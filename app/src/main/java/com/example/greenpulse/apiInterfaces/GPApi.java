@@ -42,6 +42,9 @@ public interface GPApi {
     @GET("crop/get/name/{name}")
     Call<CropResponse>getCropByName(@Path("name") String name);
 
+    @GET("crop/get/{id}")
+    Call<CropResponse>getCropById(@Path("id") int id);
+
     @GET("user/id/{id}")
     Call<UserResponse>getUserById(@Path("id") Long id);
 

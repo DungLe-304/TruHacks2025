@@ -23,6 +23,7 @@ public class RetrofitInstance {
             addConverterFactory(GsonConverterFactory.create())
             .build();
 
+
     public static NewsApi newsApi(){return NewsFit.create(NewsApi.class);}
     public static WeatherApi weatherApi(){return WeatherFit.create(WeatherApi.class);}
     public static GPApi gpApi(){return GPFit.create(GPApi.class);}

@@ -11,7 +11,7 @@ import android.os.Bundle;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -137,7 +137,8 @@ public class HomeFragment extends Fragment {
     private void getWeatherInfo() {
 
         WeatherApi weatherApi = RetrofitInstance.weatherApi();
-        weatherApi.getWeather(34.67,99.89,getString(R.string.weatherKey)).enqueue(new Callback<WeatherResponse>() {
+        weatherApi.getWeather(34.67,99.89,getString(R.string.weatherKey)).
+                enqueue(new Callback<WeatherResponse>() {
             @Override
             public void onResponse(Call<WeatherResponse> call, Response<WeatherResponse> response) {
                 if(response.isSuccessful() && response.body()!=null)

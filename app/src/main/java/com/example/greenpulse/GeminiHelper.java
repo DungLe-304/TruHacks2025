@@ -1,7 +1,5 @@
 package com.example.greenpulse;
 
-import static java.security.AccessController.getContext;
-
 import android.graphics.Bitmap;
 
 import com.google.ai.client.generativeai.GenerativeModel;
@@ -23,7 +21,7 @@ public class GeminiHelper {
     }
 
     public void callGemini(String prompt, final GeminiCallback callback) {
-        GenerativeModel gm = new GenerativeModel("gemini-1.5-pro", apiKey);
+        GenerativeModel gm = new GenerativeModel("gemini-1.5", apiKey);
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
 
         Content content = new Content.Builder().addText(prompt).build();

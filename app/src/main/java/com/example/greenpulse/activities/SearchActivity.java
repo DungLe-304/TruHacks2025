@@ -4,9 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Toast;
 
+import com.example.greenpulse.BaseActivity;
 import com.example.greenpulse.R;
 import com.example.greenpulse.RetrofitInstance;
 import com.example.greenpulse.apiInterfaces.GPApi;
@@ -15,8 +21,7 @@ import com.example.greenpulse.responses.CropResponse;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
+
 
 public class SearchActivity extends AppCompatActivity {
 
@@ -24,6 +29,11 @@ public class SearchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
+
+        setUpBar();
+
+
+        //searchView logic
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
         SearchView searchView = findViewById(R.id.searchView2);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -35,8 +45,10 @@ public class SearchActivity extends AppCompatActivity {
                     public void onResponse(Call<CropResponse> call, Response<CropResponse> response) {
                         if(response.isSuccessful() && response.body()!=null)
                         {
-                            Toast.makeText(SearchActivity.this, response.body().data.cropName,
-                                    Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent(SearchActivity.this,
+                                    CropDetailsActivity.class);
+                            intent.putExtra("id", response.body().data.cropId);
+                            startActivity(intent);
                         }
                     }
 
@@ -53,5 +65,17 @@ public class SearchActivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
+
+    private void setUpBar() {
+        GradientDrawable gradientDrawable = (GradientDrawable) getResources().
+                getDrawable(R.drawable.grad_3);
+        int startColor = gradientDrawable.getColors()[0];
+        int endColor = gradientDrawable.getColors()[1];
+        Window window = getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.setStatusBarColor(endColor);
+        int bottomColor = Color.parseColor("#153E50");
+        window.setNavigationBarColor(bottomColor);
     }
 }

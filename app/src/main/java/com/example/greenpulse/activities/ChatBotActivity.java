@@ -35,7 +35,7 @@ public class ChatBotActivity extends OtherActivity {
     List<ChatModel> messageList;
     ActivityChatBotBinding binding;
     Toolbar toolbar;
-    private String geminiKey = "AIzaSyDVt6V-K2MD7k7vZZ8fC_P6mHeS0kYKutw";
+    private String geminiKey = "AIzaSyDC1PG_TxAl0dUaSW_PMSnv6zv-MAWrhNA";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
