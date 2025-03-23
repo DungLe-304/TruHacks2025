@@ -1,5 +1,5 @@
 ## 📽 Watch the demo & presentation##:
-📽 Watch the demo: [YouTube Video](https://www.youtube.com/watch?v=MSem1tq8HHw&t=3s)
+Watch the demo: [YouTube Video](https://www.youtube.com/watch?v=MSem1tq8HHw&t=3s)
 
 Here is Main server created using Spring Boot: https://github.com/SteveRogersBD/TruServer2025.git
 
