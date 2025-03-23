@@ -1,8 +1,8 @@
 ## 📽 Watch the demo & presentation##:
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/YOUTUBE_VIDEO_ID](https://www.youtube.com/watch?v=MSem1tq8HHw&t=3s)" frameborder="0" allowfullscreen></iframe>
-
+📽 Watch the demo: [YouTube Video](https://www.youtube.com/watch?v=MSem1tq8HHw&t=3s)
 
 Here is Main server created using Spring Boot: https://github.com/SteveRogersBD/TruServer2025.git
+
 
 ![Green Pulse](logo1.png)
 # **Green Pulse: Smart Farming for a Sustainable Future**   
