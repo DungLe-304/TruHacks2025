@@ -1,0 +1,11 @@
+uploads/
+__pycache__/
+.env
+
+train_model.py
+test_api.py
+
+test_images_corns/
+best_model (corn).pth
+class_names (corn).json
+
