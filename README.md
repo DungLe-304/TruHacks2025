@@ -66,5 +66,6 @@ We built GreenPulse by integrating multiple AI models and utilizing the followin
 - **🛰️Advanced Satellite analytics**: We aim to expand our satellite analysis capabilities, providing deeper insights into crop health and field conditions for better farm management.
 - **🤖 Better AI model**: AI model to support wider range of crops and diseases, providing more accurate and comprehensive predictions for better farm management.
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/VIDEO_ID](https://youtu.be/UznGzx5qtyE?si=O6vYOQH6d1QJpipN)" frameborder="0" allowfullscreen></iframe>
+[![Watch the Video](https://img.youtube.com/vi/UznGzx5qtyE/0.jpg)](https://youtu.be/UznGzx5qtyE)
+
 
