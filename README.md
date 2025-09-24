@@ -75,3 +75,6 @@ We built GreenPulse by integrating multiple AI models and utilizing the followin
 
 ## Credits
 This project was co-developed by Dung Le (Tony).
+
+## Credits
+This project was co-developed by Dung Le (Tony).
