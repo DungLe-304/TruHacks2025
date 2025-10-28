@@ -43,6 +43,6 @@ along with removing infected plants to minimize spread.
     </string>
 
     <string name="weatherKey">c4179b477fa847caa06a8b944f07707f</string>
-    <string name="location_Key">AIzaSyAHSSVoT_SOJTv9O2Gl08t-KeUiw4o4nV4</string>
-    <string name="gemini_key">AIzaSyDk0_Ar996a49JX_ZbEUjUpN089gj3sSuM</string>
+    <string name="location_Key">REDACTED</string>
+    <string name="gemini_key">REDACTED</string>
 </resources>

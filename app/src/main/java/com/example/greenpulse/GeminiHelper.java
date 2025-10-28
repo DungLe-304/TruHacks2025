@@ -14,7 +14,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 public class GeminiHelper {
-    private final String apiKey="AIzaSyDC1PG_TxAl0dUaSW_PMSnv6zv-MAWrhNA";
+    private final String apiKey="REDACTED";
     private final int TEXT = 1;
     private final int IMAGE = 2;
     public GeminiHelper() {
